@@ -8,8 +8,7 @@ public class BubbleSortTest{
 	@Test
 	public void testbubble(){
 		int[] array = {-1, 0 , 10, 15, 3, 5, 8};
-		BubbleSort bubble = new BubbleSort();
-		array = bubble.bubble(array);
+		array = BubbleSort.bubble(array);
 
 		assertEquals(-1, array[0]);
 		assertEquals(0, array[1]);

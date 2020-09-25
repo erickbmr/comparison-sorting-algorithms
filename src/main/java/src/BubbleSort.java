@@ -2,7 +2,7 @@ package src;
 
 public class BubbleSort
 {
-    public int[] bubble(int[] array)
+    public static int[] bubble(int[] array)
     {
         int swapCounter = -1, aux = 0;
         int index = array.length;
