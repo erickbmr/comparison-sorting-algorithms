@@ -2,7 +2,7 @@ package src;
 
 public class BubbleSort
 {
-    public void bubble(int[] array)
+    public int[] bubble(int[] array)
     {
         int swapCounter = -1, aux = 0;
         int index = array.length;
@@ -14,7 +14,7 @@ public class BubbleSort
             {
                 if(array[i] > array[i + 1])
                 {
-                    if (array[i + 1] != '\0')
+                    if (array[i + 1] != -1)
                     {
                         aux = array[i];
                         array[i] = array[i + 1];
@@ -28,5 +28,6 @@ public class BubbleSort
             index--;
         }while(swapCounter != 0);
 
+        return array;
     }
 }
