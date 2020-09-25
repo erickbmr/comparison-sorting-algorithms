@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="src.BubbleSortTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-09-25T13:10:48" hostname="arch" time="0.002">
+  <properties/>
+  <testcase name="testbubble" classname="src.BubbleSortTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
