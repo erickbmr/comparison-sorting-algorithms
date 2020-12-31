@@ -4,7 +4,7 @@ public class SelectionSort
 {
     public static int term = 0;
 
-    public static int[] selectionSort(int[] array)
+    public static void selectionSort(int[] array)
     {
         int aux = 0, minimum = 0;
 
@@ -23,8 +23,6 @@ public class SelectionSort
                 continue;
             }
         }
-
-        return array;
     }
 
     public static int getMinimum(int[] array, int startIndex)
