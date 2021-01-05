@@ -2,21 +2,21 @@ package src;
 
 public class MergeSort
 {
-    public static void mergeSort(int array[], int start, int end)
+    public static void mergeSort(int array[], int start, int length)
     {  
-        if(start < end)
+        if(start < length)
         {
-            int middle = (start + end) / 2;
+            int middle = (start + length) / 2;
             mergeSort(array, start, middle);
-            mergeSort(array, middle + 1, end);
-            merge(array, start, middle, end);
+            mergeSort(array, middle + 1, length);
+            merge(array, start, middle, length);
         }
     }
 
-    public static void merge(int[] array, int start, int middle, int end)
+    public static void merge(int[] array, int start, int middle, int length)
     {
         int leftSize = middle - start + 1;
-        int rightSize = end - middle;
+        int rightSize = length - middle;
         
         int[] left = new int[leftSize];
         int[] right = new int[rightSize];
@@ -31,7 +31,7 @@ public class MergeSort
         for(i = 0; i < rightSize; i++)
             right[i] = array[middle + 1 + i];
 
-        for(i = start; i <= end; i++)
+        for(i = start; i <= length; i++)
         {
             if(leftIndex < leftSize)
             {
@@ -48,7 +48,7 @@ public class MergeSort
                     array[i] = left[leftIndex];
                 }
             }
-            
+
             else
             {
                 array[i] = right[rightIndex++];
