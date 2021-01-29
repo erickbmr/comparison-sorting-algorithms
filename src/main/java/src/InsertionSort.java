@@ -2,7 +2,7 @@ package src;
 
 public class InsertionSort
 {
-    public static void insertion(int[] array)
+    public static int[] insertion(int[] array)
     {
         int aux = 0, index = 0, length = array.length;
 
@@ -19,5 +19,7 @@ public class InsertionSort
 
             array[index + 1] = aux;
         }
+
+        return (array);
     }
 }
